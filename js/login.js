@@ -1,23 +1,26 @@
 let username = document.querySelector("#username");
 let password = document.querySelector("#password");
-
 let loginBtn = document.querySelector("#sign_in");
-
-let getUser = localStorage.getItem("username");
-let getPassword = localStorage.getItem("password");
 
 loginBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  if (username.value === "" || password.value === "") {
-    alert("please fill data ");
+
+  // جلب البيانات فورا عند الضغط للتحقق من آخر قيمة تم تخزينها
+  let getUser = localStorage.getItem("username");
+  let getPassword = localStorage.getItem("password");
+
+  if (username.value.trim() === "" || password.value.trim() === "") {
+    alert("Please fill data");
   } else {
-    if (getUser && getUser.trim() === username.value && getPassword && getPassword === password.value) {
-      alert("✅ login success, redirecting...");
+    // مقارنة ما كتبه المستخدم مع البيانات المخزنة
+    if (getUser && getUser.trim() === username.value.trim() && getPassword && getPassword === password.value) {
+      alert("✅ Login success, redirecting...");
       setTimeout(() => {
-        window.location = "../index-1.html";
+        // تأكد هل الصفحة الرئيسية اسمها index.html أو index-1.html
+        window.location = "../index.html";
       }, 1500);
     } else {
-      alert("❌ username or password is wrong ");
+      alert("❌ Username or password is wrong");
     }
   }
 });
