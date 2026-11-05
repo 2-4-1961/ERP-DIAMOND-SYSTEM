@@ -17,7 +17,7 @@ loginBtn.addEventListener("click", function (e) {
       alert("✅ Login success, redirecting...");
       setTimeout(() => {
         // تأكد هل الصفحة الرئيسية اسمها index.html أو index-1.html
-        window.location = "../index.html";
+        window.location = "../index-1.html";
       }, 1500);
     } else {
       alert("❌ Username or password is wrong");
