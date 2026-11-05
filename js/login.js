@@ -16,7 +16,7 @@ loginBtn.addEventListener("click", function (e) {
     if (getUser && getUser.trim() === username.value.trim() && getPassword && getPassword === password.value) {
       alert("✅ Login success, redirecting...");
       setTimeout(() => {
-        // تأكد هل الصفحة الرئيسية اسمها index.html أو index-1.html
+        // index-1.html
         window.location = "../index-1.html";
       }, 1500);
     } else {
