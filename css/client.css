@@ -1,0 +1,124 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+} */
+
+button {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* .modal {
+  display: none; 
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  overflow: auto;
+} */
+
+.modal-content {
+  background: #d9edf7;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 50%;
+  max-width: 700px;
+  min-width: 400px;
+  position: relative;
+  text-align: left;
+}
+
+.modal-content {
+  max-width: 500px;
+  width: 90%;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form label {
+  display: inline-block;
+  width: 190px;
+  font-weight: bold;
+  background: #003366;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* form input, form select {
+  width: 60%;   /* بدل 300px 
+  max-width: 400px;
+} */
+
+form input,
+form select {
+  margin: 1px;
+  padding: 1px;
+  width: 230px;
+}
+
+.buttons {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.buttons button {
+  margin: 2px;
+  padding: 2px;
+}
+
+.del {
+  background: red;
+  color: white;
+}
+
+.save {
+  background: green;
+  color: white;
+}
+
+.new {
+  background: #ccc;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  form label {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  form input,
+  form select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons button {
+    flex: 1 1 45%;
+    margin: 2px;
+  }
+}

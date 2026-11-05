@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.logo {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+.logo h1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgb(174, 173, 173);
+  font-size: 35px;
+  color: darkred;
+}
+.nav {
+  display: inline-flex;
+}
+.nav li {
+  display: inline-flex;
+  margin: 7px;
+  padding: 10px;
+}
+.nav a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 30px;
+  color: black;
+  font-style: italic;
+}
+.nav a:hover {
+  color: #090909;
+  /* background-color: darkblue; */
+  transition: 2s;
+  cursor: pointer;
+  padding: 5px;
+  box-shadow: 3px 3px 3px 3px #000000;
+}
+
+#xxx {
+  width: 100%;
+  height: 600px;
+  border: none;
+  margin-top: 200px;
+  padding-left: 20px;
+  overflow: auto; 
+  border: none;
+}
+
+form {
+  border: 1px solid rgb(209, 209, 209);
+  box-shadow: 5px 5px rgb(207, 206, 206);
+  padding: 10px;
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  align-items: center;
+}
+
+.inputlabel {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 10px 10px 10px;
+}
+#user {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+#pass {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+button {
+  width: 20%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  color: rgb(236, 229, 229);
+  background-color: #2d87e0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.checkbox {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 30px;
+  line-height: 1.6;
+  margin: 5px;
+  color: darkred;
+}
+li {
+  color: darkblue;
+  font-size: 20px;
+  margin: 7px 7px 7px 30px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 1.6;
+  margin: 5px;
+  color: darkred;
+}
+video {
+  margin-left: 100px;
+}
+audio {
+  margin-left: 100px;
+}

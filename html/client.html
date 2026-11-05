@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Customer</title>
+    <link rel="stylesheet" href="../css/client.css" />
+  </head>
+  <body>
+    <div id="customerModal" class="modal">
+      <div class="modal-content">
+        <!-- <span class="close">&times;</span> -->
+        <span class="close" onclick="this.closest('.modal-content').style.display='none';">&times;</span>
+        <h2>Add Customer</h2>
+
+        <form>
+          <label for="code">Customer Code</label>
+          <input type="text" id="code" name="code" /><br />
+
+          <label for="name">Customer Name</label>
+          <input type="text" id="name" name="name" /><br />
+
+          <label for="add">Address</label>
+          <input type="text" id="add" name="add" /><br />
+
+          <label for="tel">Tel.</label>
+          <input type="text" id="tel" name="tel" /><br />
+
+          <label for="resp">RESP. SALES CODE:</label>
+          <select>
+            <option value="">-- Select --</option>
+            <option>Code 1</option>
+            <option>Code 2</option></select
+          ><br />
+
+          <label for="desc">Discount percentage</label>
+          <input type="number" id="desc" name="desc" value="0.00" />%
+
+          <label for="who">Wholesale/Sectoral</label>
+          <select>
+            <option>Wholesale</option>
+            <option>Sectoral</option></select
+          ><br />
+
+          <label for="debtor">First term debtor</label>
+          <input type="number" id="debtor" name="debtor" value="0.00" /><br />
+
+          <label for="debit">Debit</label>
+          <input type="number" id="debit" value="0.00" />
+          <label for="credit">Credit</label>
+          <input type="number" id="credit" name="credit" value="0.00" /><br />
+
+          <label for="bal">Current Balance</label>
+          <input type="text" id="bal" name="bal" /><br />
+
+          <label for="email">E_mail</label>
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="notes">Notes</label>
+          <input type="text" id="notes" name="notes" /><br />
+
+          <div class="buttons">
+            <button type="button" class="del">Del Customer</button>
+            <button type="button">◀</button>
+            <button type="button">▶</button>
+            <button type="button">⏮</button>
+            <button type="button" class="save">Save</button>
+            <button type="button" class="new">New Customers</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
